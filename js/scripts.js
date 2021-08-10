@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  $("#clickShow").click(function() {
-    $("#walrus-showing").fadeIn();
-    $("#walrus-hidden").fadeOut();
+  $(".clickable").click(function() {
+    $("#walrus-showing").fadeToggle();
+    $("#walrus-hidden").fadeToggle();
   });
-  $("#clickHide").click(function() {
-    $("#walrus-showing").fadeOut();
-    $("#walrus-hidden").fadeIn();
-  });
+  // $("#clickHide").click(function() {
+  //   $("#walrus-showing").slideToggle();
+  //   $("#walrus-hidden").slideToggle();
+  // });
 });
